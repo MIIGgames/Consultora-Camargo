@@ -244,7 +244,10 @@ span:nth-of-type(2){
     
     .oqpfpv {
         width: auto;
-        padding: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
     }
     
     .oqpfpv h1{
@@ -258,6 +261,7 @@ span:nth-of-type(2){
     }
     
     .descricao-div2 p {
+        text-align: left;
         font-weight: 600;
         margin-top: 1.2rem;
         font-size: 1.5rem;
