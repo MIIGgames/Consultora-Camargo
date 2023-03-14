@@ -15,6 +15,20 @@
 <body>
     <!-- Header -->
     <header id="banner">
+        <div id="header">
+            <a id="logo" href="">Consultoria Camargo</a>
+            <nav id="nav">
+              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                <span id="hamburger"></span>
+              </button>
+              <ul id="menu" role="menu">
+                <li><a href="/">Sobre |</a></li>
+                <li><a href="/">Produtos |</a></li>
+                <li><a href="/">Portfólio |</a></li>
+                <li><a href="/">Contato |</a></li>
+              </ul>
+            </nav>
+        </div>
         <div class="titulo-main">
             <h1>Consultoria Camargo</h1>
             <h2>Experiência. Compromisso. Valor.</h2>
@@ -38,6 +52,9 @@
 
                 <p>A <span>Consultoria Camargo</span> é uma empresa especializada em soluções financeiras, comprometida em oferecer serviços de alta qualidade e eficiência para seus clientes. Com uma equipe altamente graduada e experiência no mercado financeiro, a empresa atende tanto indivíduos quanto empresas em todo o país.</p>
             </div>
+            <a href="#" class="button-whatsapp">
+                Conversar pelo WhatsApp
+            </a>
             </div>
         </section>
 
@@ -61,21 +78,61 @@
 
             <div class="card">
                 <div class="bloco">
-                    <img src="img/pessoas-negocios.png" alt="">
-                    <h2 class="descricao-bloco">Atendimentos para bancos</h2>
+                    <img src="img/Design sem nome (11).png" alt="">
+                    <p class="descricao-bloco">Atendimentos para bancos</p>
                 </div>
                 <div class="bloco">
-                    <img src="img/pessoas-negocios.png" alt="">
-                    <h2 class="descricao-bloco">Atendimentos para bancos</h2>
+                    <img src="img/Design sem nome (12).png" alt="">
+                    <p class="descricao-bloco">Quitação de veículo</p>
                 </div>
                 <div class="bloco">
-                    <img src="img/pessoas-negocios.png" alt="">
-                    <h2 class="descricao-bloco">Atendimentos para bancos</h2>
+                    <img src="img/Design sem nome (13).png" alt="">
+                    <p class="descricao-bloco">Segunda via de boleto
+                    </p>
                 </div>
             </div>
 
         </section>
 
+        <section class="div-4">
+
+            <h1>O que fazemos de melhor</h1>
+
+            <div class="card">
+                <dib class="bloco-2">
+                    <img src="img/Design sem nome (14).png" alt="">
+                    <p>Conquistamos seu sonhos</p>
+                </dib>
+                <dib class="bloco-2">
+                    <img src="img/Design sem nome (15).png" alt="">
+                    <p>Conquistamos seu sonhos</p>
+                </dib>
+                <dib class="bloco-2">
+                    <img src="img/Design sem nome (16).png" alt="">
+                    <p>Conquistamos seu sonhos</p>
+                </dib>
+            </div>
+        </section>
+
     </main>
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+        function toggleMenu(event) {
+        if (event.type === 'touchstart') event.preventDefault();
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+        const active = nav.classList.contains('active');
+        event.currentTarget.setAttribute('aria-expanded', active);
+        if (active) {
+            event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+        } else {
+            event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+        }
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
 </body>
 </html>

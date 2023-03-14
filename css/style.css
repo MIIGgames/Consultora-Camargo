@@ -20,7 +20,7 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
 }
 
 .titulo-main {
@@ -76,7 +76,7 @@ span {
 /* ======= DIV-1 ======= */
 
 .div-1 {
-    background: #000000f2;
+    background: #000000dd;
     height: 100vh;
 }
 
@@ -106,14 +106,17 @@ span {
     margin-left: 2rem;
     width: 50%;
     margin-top: 3rem;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .descricao-2 p {
     margin-top: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 } 
 
+.button-whatsapp {
+    display: none;
+}
 /* ======= DIV-2 ======= */
 
 .div-2 {
@@ -182,18 +185,23 @@ span:nth-of-type(2){
     }
     #banner {
         width: 100%;
+        background-position: right;
+        background-size: cover;
     }
     .titulo-main {
+        background-color: #ededed30;
         display: flex;
         flex-direction: column;
         width: auto;
-        left: 15px;
+        left: 0px;
         text-align: center;
+        margin-bottom: 30px;
     }
     .titulo-main h1 {
         font-size: 3.5rem;
         color: var(--azul-principal);
         font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
     }    
     .titulo-main h2 {
         margin-top: 1.2rem;
@@ -235,7 +243,25 @@ span:nth-of-type(2){
     .descricao-2 p {
         margin-top: 1rem;
         font-size: 1.8rem;
-    } 
+    }
+
+    .button-whatsapp {
+        display: block;
+        border: 1px solid #5271ff;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: #5271ff;
+        padding: 20px;
+        text-align: center;
+        margin: 30px auto;
+    }
+    
+    .button-whatsapp:hover {
+        transform: scale(1.05);
+        transition: 1s;
+    }    
 
     /* ================================ */
     .div-2 {
