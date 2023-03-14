@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: auto;
     padding: 10px;
-    height: 90vh;
+    height: auto;
     width: 100%;
 }
 
@@ -137,3 +137,39 @@ a {
       top: -7px;
     }
   }
+
+/* ========= DIV-5 ======== */
+
+.div-5 {
+    background-color: #5271ff;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.descricao-4 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+.descricao-4 p {
+    margin: auto;
+    width: 80%;
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+}
+
+@media screen and (max-width:768px) {
+    .div-5 {
+        width: auto;
+        height: auto;
+    }
+
+    .descricao-4 p {
+        width: auto;
+    }
+}
