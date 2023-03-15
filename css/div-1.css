@@ -69,6 +69,7 @@
     }
     .descricao-2 p {
         margin-top: 1rem;
+        text-align: left;
         font-size: 1.8rem;
     }
 
