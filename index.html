@@ -21,28 +21,26 @@
               <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
                 <span id="hamburger"></span>
               </button>
-              <ul id="menu" role="menu">
-                <li><a href="/">Sobre |</a></li>
-                <li><a href="/">Produtos |</a></li>
-                <li><a href="/">Portfólio |</a></li>
-                <li><a href="/">Contato |</a></li>
+              <ul class="menu" id="menu" role="menu">
+                <li><a href="#sobre">Sobre |</a></li>
+                <li><a href="#serviços">Serviços |</a></li>
+                <li><a href="#contato">Contato |</a></li>
               </ul>
             </nav>
         </div>
         <div class="titulo-main">
             <h1>Consultoria Camargo</h1>
-            <h2>Experiência. Compromisso. Valor.</h2>
-            <a href="#" class="button">Saiba mais ></a>
+            <h2>Quitaçã de veículo. Segunda via de boleto. Antecipação de parcelas</h2>
+            <a href="#sibamais" class=" button">Saiba mais </a>
         </div>
     </header>
 
     <!-- MAIN -->
     <main>
 
-        <section class="div-1">
-
+        <!--============= DIV-1 ====================-->
+        <section id="sobre" class="div-1">
             <div class="geral">
-
             <div class="descricao-1">
                 <h1 class="h1-prin">Sobre a consultora Camargo</h1>
                 <h1 class="azul">Você precisa fazer do jeito certo.</h1>
@@ -58,7 +56,8 @@
             </div>
         </section>
 
-        <section class="div-2">
+        <!--============= DIV-2 ====================-->
+        <section id="sibamais" class="div-2">
             <div class="oqpfpv">
                 <h1>O que podemos fazer por você?</h1>
                 <div class="descricao-div2">
@@ -72,7 +71,8 @@
             </div>
         </section>
 
-        <section class="div-3">
+        <!--============= DIV-3 ====================-->
+        <section id="serviços" class="div-3">
 
             <h1>Nosso Trabalho</h1>
 
@@ -82,11 +82,11 @@
                     <p class="descricao-bloco">Atendimentos para bancos</p>
                 </div>
                 <div class="bloco">
-                    <img src="img/Design sem nome (12).png" alt="">
+                    <img src="img/Design sem nome (19).png" alt="">
                     <p class="descricao-bloco">Quitação de veículo</p>
                 </div>
                 <div class="bloco">
-                    <img src="img/Design sem nome (13).png" alt="">
+                    <img src="img/Design sem nome (20).png" alt="">
                     <p class="descricao-bloco">Segunda via de boleto
                     </p>
                 </div>
@@ -94,22 +94,21 @@
 
         </section>
 
-        <section class="div-4">
-
+        <!--============= DIV-4 ====================-->
+        <section id="produtos" class="div-4">
             <h1>O que fazemos de melhor</h1>
-
             <div class="card">
                 <dib class="bloco-2">
                     <img src="img/Design sem nome (14).png" alt="">
-                    <p>Conquistamos seu sonhos</p>
+                    <p>Relizamos seu sonho</p>
                 </dib>
                 <dib class="bloco-2">
                     <img src="img/Design sem nome (15).png" alt="">
-                    <p>Conquistamos seu sonhos</p>
+                    <p>Propor soluções</p>
                 </dib>
                 <dib class="bloco-2">
                     <img src="img/Design sem nome (16).png" alt="">
-                    <p>Conquistamos seu sonhos</p>
+                    <p>Diagnosticar problemas</p>
                 </dib>
             </div>
             <a href="#" class="button-whatsapp">
@@ -117,114 +116,77 @@
             </a>
         </section>
 
+        <!--============= DIV-5 ====================-->
         <section class="div-5">
             <div class="descricao-4">
                 <p>Em resumo, a Consultoria Camargo é uma empresa comprometida em oferecer soluções financeiras personalizadas e eficientes para atender às necessidades de nossos clientes. Com uma equipe altamente qualificada e serviços especializados, estamos prontos para ajudá-lo a alcançar seus objetivos financeiros..</p>
             </div>
         </section>
 
+        <!--============= DIV-5 ====================-->
         <section class="div-6">
-            <div class="refe">
-                <img src="img/Design sem nome (18).png" alt="">
-                <div class="box-contagem"> 
-                    <span class="contagem">+600</span>
-                    <p>Serviços Prestados</p>
+            <div class="referencias">
+                <h1>Nosso PortFolio</h1>
+
+                <div class="card-referencias">
+                    <div class="bloco">
+
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="div-7">
-            <h1>Contato</h1>
+        <!--============= CONTATO ====================-->
+        <section id="contato" class="contato">
+            <h1 class="azul">Contato</h1>
             <p>Entre em contato para solucionarmos todos seus problemas.</p>
-
-                <div id="contact">
-                    <h1 class="section-header">Contact</h1>
-  
-                    <div class="contact-wrapper">
-                    
-                    <!-- Left contact page --> 
-                      
-                      <form id="contact-form" class="form-horizontal" role="form">
-                         
-                        <div class="form-group">
-                          <div class="col-sm-12">
-                            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                          </div>
-                        </div>
-                  
-                        <div class="form-group">
-                          <div class="col-sm-12">
-                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                          </div>
-                        </div>
-                  
-                        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-                        
-                        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                          <div class="alt-send-button">
-                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                          </div>
-                        
-                        </button>
-                        
-                      </form>
-                      
-                    <!-- Left contact page --> 
-                      
-                        <div class="direct-contact-container">
-                  
-                          <ul class="contact-list">
-                            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
-                            
-                            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-                            
-                            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
-                            
-                          </ul>
-                  
-                          <hr>
-                          <ul class="social-media-list">
-                            <li><a href="#" target="_blank" class="contact-icon">
-                              <i class="fa fa-github" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank" class="contact-icon">
-                              <i class="fa fa-codepen" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank" class="contact-icon">
-                              <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank" class="contact-icon">
-                              <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            </li>       
-                          </ul>
-                          <hr>
-                  
-                          <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-                  
-                        </div>
-                    </div>
+            <div class="divisao-contato">
+                <form action="#" method="POST">
+                    <label for="name">Nome:</label>
+                    <input placeholder="Nome" type="text" id="name" name="name" required>
+                
+                    <label for="company">Empresa(opcional):</label>
+                    <input placeholder="Empresa(opcional)" type="text" id="company" name="company">
+                
+                    <label for="email">E-mail:</label>
+                    <input placeholder="E-mail" type="email" id="email" name="email" required>
+                
+                    <label for="phone">Telefone:</label>
+                    <input placeholder="Telefone" type="tel" id="phone" name="phone" required>
+                
+                    <label for="message">Conte-nos o motivo do contato! :</label>
+                    <textarea placeholder="Conte-nos o motivo do contato!" id="message" name="message" rows="5" required></textarea>
+                
+                    <button type="submit">Enviar</button>
+                  </form>
             </div>
         </section>
 
-    </main>
-    <script src="js/contador.js"></script>
-    <script>
-        const btnMobile = document.getElementById('btn-mobile');
-        function toggleMenu(event) {
-        if (event.type === 'touchstart') event.preventDefault();
-        const nav = document.getElementById('nav');
-        nav.classList.toggle('active');
-        const active = nav.classList.contains('active');
-        event.currentTarget.setAttribute('aria-expanded', active);
-        if (active) {
-            event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-        } else {
-            event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-        }
-        }
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.me/" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
 
-        btnMobile.addEventListener('click', toggleMenu);
-        btnMobile.addEventListener('touchstart', toggleMenu);
+    </main>
+    <script src="js/menu.js"></script>
+    <script src="js/contato.js"></script>
+    <script src="js/ancora-menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.min.js"></script>
+
+
+    <script>
+        // Check if the element exists before accessing its property
+        let codescript = document.querySelector('#codescript');
+        if (codescript !== null) {
+        // Access the codescript property
+        let value = codescript.codescript;
+        // Do something with the value
+        } else {
+        // Handle the case where the element does not exist
+        console.log('Element not found');
+        }
     </script>
+      
 </body>
 </html>

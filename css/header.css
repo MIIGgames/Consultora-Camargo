@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --azul-principal: #5271ff;
+    --cinza-escuro: #545454;
+    font-family: "Inter", sans-serif;
+}
+
+/* ======= BANNER ======= */
+
+#banner {
+    background-image: url(../img/banner-principal.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titulo-main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    top: 30%;
+    left: 12%;
+    justify-content: left;
+}
+
+.titulo-main h1 {
+    font-size: 5.5rem;
+    color: var(--azul-principal);
+}
+
+.titulo-main h2 {
+    margin-top: 1.2rem;
+    color: var(--cinza-escuro);
+    margin-left: 10px;
+}
+
+.titulo-main .button {
+    margin-top: 2rem;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid var(--azul-principal);
+    border-radius: 50px;
+    width: 30%;
+    text-align: center;
+    background-color: var(--azul-principal);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* ======= MAIN ======= */
+
+.azul {
+    color: #5271ff;
+}
+
+span {
+    color: #5271ff;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+    #banner {
+        width: 100%;
+        background-position: right;
+        background-size: cover;
+    }
+    .titulo-main {
+        background-color: #ededed30;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        left: 0px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .titulo-main h1 {
+        font-size: 3.5rem;
+        color: var(--azul-principal);
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+    }    
+    .titulo-main h2 {
+        margin-top: 1.2rem;
+        color: var(--cinza-escuro);
+        margin-left: 10px;
+    }
+    .titulo-main .button {
+        width: 200px;
+        margin-left: 10px;
+        margin: 2rem auto;
+    }
+}
+
+/* ========== BUTTON WHATZAP ============ */
