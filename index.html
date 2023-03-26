@@ -4,189 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"/>
     <title>Consultora Camargo</title>
+    <!-- =========== css =========== -->
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-    <!-- Header -->
-    <header id="banner">
-        <div id="header">
-            <a id="logo" href="">Consultoria Camargo</a>
-            <nav id="nav">
-              <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
-                <span id="hamburger"></span>
-              </button>
-              <ul class="menu" id="menu" role="menu">
-                <li><a href="#sobre">Sobre |</a></li>
-                <li><a href="#serviços">Serviços |</a></li>
-                <li><a href="#contato">Contato |</a></li>
-              </ul>
-            </nav>
-        </div>
-        <div class="titulo-main">
-            <h1>Consultoria Camargo</h1>
-            <h2>Quitaçã de veículo. Segunda via de boleto. Antecipação de parcelas</h2>
-            <a href="#sibamais" class=" button">Saiba mais </a>
-        </div>
-    </header>
+    <!-- ============== HEADER ============= -->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="#" alt=""><div class="nome-logo">Consultora Camargo</div></a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+            <ul id="menu" role="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#o-que-fazemos">O que fazemos</a></li>
+                <li><a href="#servico">Serviço</a></li>
+                <li><a href="#suporte"></a></li>
+                <li class="contato-menu"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+      </header>
 
-    <!-- MAIN -->
-    <main>
+    <!-- ============== BANNER ============= -->
+    <section class="banner">
+        <div class="descricao-banner">
+            <h1>BEM VINDO(A)</h1>
+            <p>Camargo é uma empresa de consultoria especializada em ajudar outras pessoas a alcançar seus sonhos. Com uma equipe altamente qualificada e experiente, oferecemos soluções personalizadas para cada cliente, desde pequenas empresas até grandes corporações.</p>
+            <button class="button">SAIBA MAIS</button>
+        </div>
+    </section>
 
-        <!--============= DIV-1 ====================-->
-        <section id="sobre" class="div-1">
-            <div class="geral">
-            <div class="descricao-1">
-                <h1 class="h1-prin">Sobre a consultora Camargo</h1>
+    <!-- ============== SECTION-1 ============= -->
+    <section id="sobre" class="sobre">
+        <div class="descricao-sobre">
+            <div class="ab12-iii-sobre">
+                <h1>Sobre a consultora Camargo</h1>
                 <h1 class="azul">Você precisa fazer do jeito certo.</h1>
             </div>
-            <div class="descricao-2">
+            <div class="descricao-p-sobre">
                 <p>Um dos serviços oferecidos pela <span>Consultoria Camargo</span> é o atendimento para bancos, que inclui processos de dívidas e soluções personalizadas para problemas financeiros. A equipe trabalha de forma diligente para garantir que as necessidades e expectativas do cliente sejam atendidas de forma eficiente.</p>
-
                 <p>A <span>Consultoria Camargo</span> é uma empresa especializada em soluções financeiras, comprometida em oferecer serviços de alta qualidade e eficiência para seus clientes. Com uma equipe altamente graduada e experiência no mercado financeiro, a empresa atende tanto indivíduos quanto empresas em todo o país.</p>
             </div>
-            <a href="https://wa.link/6lk0nq" class="button-whatsapp">
-                Conversar pelo WhatsApp
-            </a>
+        </div>
+    </section>
+
+    <!-- ============== SECTION-2 ============= -->
+    <section id="o-que-fazemos" class="section-2">
+        <div class="descricao-section-2">
+            <h1>O que podemos fazer por você?</h1>
+            <p>Entre os serviços que oferecemos, destacamos os atendimentos para bancos, que incluem influência de dívidas e soluções personalizadas para problemas financeiros. Além disso, somos uma empresa terceirizada para quitação de veículos, facilitando o processo para nossos clientes e garantindo que suas obrigações sejam cumpridas com rapidez e segurança.</p>
+            <p>Outro serviço que oferecemos é a emissão de segunda via de boleto, permitindo que nossos clientes recebam a documentação necessária de forma ágil e sem complicações. Além disso, temos a opção de antecipação de parcelas, para que os clientes possam pagar suas dívidas de forma mais rápida e eficiente.
+            </p>
+            <!-- ======= Seta =========-->
+            <div class="seta-1">
+                <span class="seta"></span>
+                <span class="seta"></span>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--============= DIV-2 ====================-->
-        <section id="sibamais" class="div-2">
-            <div class="oqpfpv">
-                <h1>O que podemos fazer por você?</h1>
-                <div class="descricao-div2">
-                    <p>Entre os serviços que oferecemos, destacamos os atendimentos para bancos, que incluem influência de dívidas e soluções personalizadas para problemas financeiros. Além disso, somos uma empresa terceirizada para quitação de veículos, facilitando o processo para nossos clientes e garantindo que suas obrigações sejam cumpridas com rapidez e segurança.</p>
-                    <p>Outro serviço que oferecemos é a emissão de segunda via de boleto, permitindo que nossos clientes recebam a documentação necessária de forma ágil e sem complicações. Além disso, temos a opção de antecipação de parcelas, para que os clientes possam pagar suas dívidas de forma mais rápida e eficiente.</p>
-                </div>
-                <div class="seta-1">
-                    <span class="seta"></span>
-                    <span class="seta"></span>
-                </div>
-            </div>
-        </section>
-
-        <!--============= DIV-3 ====================-->
-        <section id="serviços" class="div-3">
-
-            <h1>Nosso Trabalho</h1>
-
-            <div class="card">
-                <div class="bloco">
-                    <img src="img/Design sem nome (11).png" alt="">
-                    <p class="descricao-bloco">Atendimentos para bancos</p>
-                </div>
-                <div class="bloco">
-                    <img src="img/Design sem nome (19).png" alt="">
-                    <p class="descricao-bloco">Quitação de veículo</p>
-                </div>
-                <div class="bloco">
-                    <img src="img/Design sem nome (20).png" alt="">
-                    <p class="descricao-bloco">Segunda via de boleto
-                    </p>
+    <!-- ============== SECTION-3 ============= -->
+    <section id="servico" class="section3">
+        <div class="titulo-linha">
+            <div class="linha"></div>
+            <h1 class="titulo-h1">Nosso Trabalho</h1>
+            <div class="linha"></div>
+        </div>
+        <!--=== CARDS === -->
+        <div class="cards">
+            <div class="bloco">
+                <div class="card-img">
+                    <img src="img/boleto (1).png" alt="quitação de veículo">
+                    <h2>Quitação de veículo</h2>
                 </div>
             </div>
 
-        </section>
-
-        <!--============= DIV-4 ====================-->
-        <section id="produtos" class="div-4">
-            <h1>O que fazemos de melhor</h1>
-            <div class="card">
-                <dib class="bloco-2">
-                    <img src="img/Design sem nome (14).png" alt="">
-                    <p>Relizamos seu sonho</p>
-                </dib>
-                <dib class="bloco-2">
-                    <img src="img/Design sem nome (15).png" alt="">
-                    <p>Propor soluções</p>
-                </dib>
-                <dib class="bloco-2">
-                    <img src="img/Design sem nome (16).png" alt="">
-                    <p>Diagnosticar problemas</p>
-                </dib>
-            </div>
-            <a href="#" class="button-whatsapp">
-                Conversar pelo WhatsApp
-            </a>
-        </section>
-
-        <!--============= DIV-5 ====================-->
-        <section class="div-5">
-            <div class="descricao-4">
-                <p>Em resumo, a Consultoria Camargo é uma empresa comprometida em oferecer soluções financeiras personalizadas e eficientes para atender às necessidades de nossos clientes. Com uma equipe altamente qualificada e serviços especializados, estamos prontos para ajudá-lo a alcançar seus objetivos financeiros..</p>
-            </div>
-        </section>
-
-        <!--============= DIV-5 ====================-->
-        <section class="div-6">
-            <div class="referencias">
-                <h1>Nosso PortFolio</h1>
-
-                <div class="card-referencias">
-                    <div class="bloco">
-
-                    </div>
+            <div class="bloco">
+                <div class="card-img">
+                    <img src="img/boleto (5).png" alt="atendimento para bancos">
+                    <h2>Atendimentos para bancos</h2>
                 </div>
             </div>
-        </section>
 
-        <!--============= CONTATO ====================-->
+            <div class="bloco">
+                <div class="card-img">
+                    <img src="img/boleto (3).png" alt="segunda via de boleto">
+                    <h2>Segunda via de boleto</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== SECTION-4 ============= -->
+    <section class="section3">
+        <div class="titulo-linha">
+            <div class="titulo-section-4"></div>
+            <h1 class="titulo-h1">Relizamos seu sonho</h1>
+            <div class="titulo-section-4"></div>
+        </div>
+        <!--=== CARDS === -->
+        <div class="cards">
+            <div class="bloco">
+                <div class="card-img">
+                    <img src="img/boleto (1).png" alt="quitação de veículo">
+                    <h2>Propor soluções</h2>
+                </div>
+            </div>
+    
+            <div class="bloco">
+                <div class="card-img">
+                    <img src="img/boleto (5).png" alt="atendimento para bancos">
+                    <h2>Diagnosticar problemas</h2>
+                </div>
+            </div>
+    
+            <div class="bloco">
+                <div class="card-img">
+                    <img src="img/boleto (3).png" alt="segunda via de boleto">
+                    <h2>Relizamos seu sonho</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- =================== CONTATO ================== -->
+        <br><br><br>
         <section id="contato" class="contato">
-            <h1 class="azul">Contato</h1>
-            <p>Entre em contato para solucionarmos todos seus problemas.</p>
-            <div class="divisao-contato">
-                <form action="https://formsubmit.co/consultoriacamargodireito@gmail.com" method="POST">
-                    <label for="name">Nome:</label>
-                    <input placeholder="Nome" type="text" id="name" name="name" required>
-                
-                    <label for="company">Empresa(opcional):</label>
-                    <input placeholder="Empresa(opcional)" type="text" id="company" name="company">
-                
-                    <label for="email">E-mail:</label>
-                    <input placeholder="E-mail" type="email" id="email" name="email" required>
-                
-                    <label for="phone">Telefone:</label>
-                    <input placeholder="Telefone" type="tel" id="phone" name="phone" required>
-                
-                    <label for="message">Conte-nos o motivo do contato! :</label>
-                    <textarea placeholder="Conte-nos o motivo do contato!" id="message" name="message" rows="5" required></textarea>
-                
-                    <button type="submit">Enviar</button>
-                  </form>
+            <div class="conta-te">
+                <h1>
+                    Consultora Camargo
+                </h1>
+                <p>Endereço</p>
             </div>
+            <form class="form" action="https://formsubmit.co/nivelsuperiordemarketing@gmail.com" method="POST">
+                <h2 class="form__title">Entre em Contato</h2>
+                <div class="form__group">
+                <input class="form__input" type="text" id="first-name" name="first-name" placeholder="Nome" required>
+                <label class="form__label" for="first-name">Nome</label>
+                </div>
+                <div class="form__group">
+                <input class="form__input" type="text" id="last-name" name="last-name" placeholder="Sobrenome" required>
+                <label class="form__label" for="last-name">Sobrenome</label>
+                </div>
+                <div class="form__group">
+                <input class="form__input" type="email" id="email" name="email" placeholder="E-mail" required>
+                <label class="form__label" for="email">E-mail</label>
+                </div>
+                <div class="form__group">
+                <textarea class="form__input form__textarea" id="message" name="message" placeholder="Mensagem" required></textarea>
+                <label class="form__label" for="message">Mensagem</label>
+                </div>
+                <button class="form__button" type="submit">Enviar</button>
+          </form>
         </section>
+        <br><br><br>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <a href="https://wa.link/6lk0nq" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        <a href="https://wa.link/6lk0nq" style="position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;color:#FFF;
+        border-radius:50px;
+        text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;" target="_blank">
         <i style="margin-top:16px" class="fa fa-whatsapp"></i>
         </a>
 
-    </main>
-    <script src="js/menu.js"></script>
-    <script src="js/contato.js"></script>
-    <script src="js/ancora-menu.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.slim.min.js"></script>
-
-
-    <script>
-        // Check if the element exists before accessing its property
-        let codescript = document.querySelector('#codescript');
-        if (codescript !== null) {
-        // Access the codescript property
-        let value = codescript.codescript;
-        // Do something with the value
-        } else {
-        // Handle the case where the element does not exist
-        console.log('Element not found');
-        }
-    </script>
-      
+      <!-- ========= SCRIPT ============ -->
+      <script src="js/menu.js"></script>
+      <script src="js/menu-ancora.js"></script>
 </body>
 </html>

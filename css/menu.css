@@ -1,107 +1,171 @@
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
 a {
-    color: black;
-    text-decoration: none;
-    font-family: sans-serif;
-  }
-  
-  a:hover {
-    border-bottom: 1px solid #5271ff;
-  }
-  
-  #logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #5271ff;
-  }
-  
-  #header {
-    box-sizing: border-box;
-    height: 70px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background:#fff;
-  }
-  
-  #menu {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #fff;
+  font-family: sans-serif;
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+#logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+span {
+    color: #000;
+}
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+}
+
+#menu {
+    margin-right: 5rem;
     display: flex;
     list-style: none;
     gap: 0.5rem;
-  }
-  
-  #menu a {
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#menu a:hover {
+    border-radius: 10px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+.contato-menu {
+  border: 1px solid #2649be;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    #logo img {
+      width: 70px;
+      height: 70px;
+    }
+    .nome-logo {
+      display: none;
+    }
+  #menu {
     display: block;
-    padding: 0.5rem;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    top: 70px;
+    right: -16px;
+    background: #fff;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    text-align: center;
+    line-height: 50px;
+    overflow-y: hidden;
   }
-  
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
   #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .contato-menu {
     display: none;
   }
-  
-  @media (max-width: 600px) {
-    #logo {
-        width: 50%;
-    }
-    #menu {
-        text-align: center;
-      display: block;
-      position: absolute;
-      width: 100%;
-      top: 70px;
-      right: 0px;
-      background: #fff;
-      transition: 0.6s;
-      z-index: 1000;
-      height: 0px;
-      visibility: hidden;
-      overflow-y: hidden;
-    }
-    #nav.active #menu {
-      height: calc(100vh - 70px);
-      visibility: visible;
-      overflow-y: auto;
-    }
-    #menu a {
-      padding: 1rem 0;
-      margin: 3rem 1rem;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    }
-    a:hover {
-        background-color: rgba(0, 0, 0, 0.123);
-      }
-    #btn-mobile {
-      display: flex;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border: none;
-      background: none;
-      cursor: pointer;
-      gap: 0.5rem;
-    }
-    #hamburger {
-      border-top: 2px solid;
-      width: 20px;
-    }
-    #hamburger::after,
-    #hamburger::before {
-      content: '';
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: currentColor;
-      margin-top: 5px;
-      transition: 0.3s;
-      position: relative;
-    }
-    #nav.active #hamburger {
-      border-top-color: transparent;
-    }
-    #nav.active #hamburger::before {
-      transform: rotate(135deg);
-    }
-    #nav.active #hamburger::after {
-      transform: rotate(-135deg);
-      top: -7px;
-    }
+}
+
+@media screen and (max-width:880px) {
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #fff;
+    font-family: sans-serif;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
   }
+  #header {
+    font-size: 1.2rem;
+    justify-content: space-between;
+  }
+  #menu {
+    margin-right: 1rem;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+}

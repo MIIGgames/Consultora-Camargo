@@ -1,0 +1,49 @@
+.titulo-linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.linha {
+    padding: 1px;
+    background-color: #000;
+    width: 25%;
+}
+
+.titulo-h1 {
+    font-size: 3rem;
+    color: #2649be;
+}
+
+.titulo-section-4 {
+    width: 18%;
+    padding: 1px;
+    background-color: #000;
+}
+
+@media screen and (max-width:768px) {
+    .titulo-linha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 50px;
+        text-align: center;
+        padding: 4px;
+    }
+    .linha {
+        display: none;
+    }
+    .titulo-h1 {
+        font-size: 2.8rem;
+    }
+    .titulo-section-4 {
+        display: none;
+    }
+}
+
+br {
+    display: none;
+}

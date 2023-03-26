@@ -1,10 +1,14 @@
-@import "header.css";
 @import "menu.css";
-@import "div-1.css";
-@import "div-2.css";
-@import "div-3.css";
-@import "div-4.css";
-@import "div-5.css";
-@import "div-6.css";
+@import "banner.css";
+@import "style.css";
+@import "section-1.css";
+@import "section-2.css";
+@import "section-3.css";
 @import "contato.css";
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
