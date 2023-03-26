@@ -49,6 +49,10 @@ span {
     color: #2649be;
 }
 
+.whatszapp {
+    display: none;
+}
+
 @media screen and (max-width:768px) {
     .sobre {
         width: auto;
@@ -79,5 +83,21 @@ span {
         font-size: 1.5rem;
         color: #000000d8;
         width: auto;
+    }
+    .whatszapp {
+        display: block;
+        margin-top: 10px;
+        background-color: #2649be;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    .whatszapp:hover {
+        background-color: #2649be;
+        transition: .5s;
+        transform: scale(1.05);
     }
 }
